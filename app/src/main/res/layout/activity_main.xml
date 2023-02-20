@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc">
+
+
+    <RelativeLayout
+        android:id="@+id/bxl"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/box">
+
+
+        <ImageView
+            android:id="@+id/pofic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/pro"></ImageView>
+
+
+        <EditText
+            android:id="@+id/userf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pofic"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_shape"
+            android:drawableStart="@drawable/phone"
+            android:hint="User Name"
+            android:padding="10dp"
+            ></EditText>
+
+
+
+
+        <EditText
+            android:id="@+id/passf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userf"
+            android:layout_margin="10dp"
+            android:background="@drawable/rounded_shape"
+            android:drawableStart="@drawable/locked"
+            android:hint="password"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:fontFamily="serif"
+            ></EditText>
+
+
+        <CheckBox
+            android:id="@+id/chkbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passf"
+            android:text="Remember Me"
+            android:layout_margin="10dp"
+            ></CheckBox>
+
+
+
+
+        <TextView
+            android:id="@+id/forp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget Password?"
+            android:layout_below="@id/passf"
+            android:layout_alignEnd="@id/passf"
+            android:layout_alignBaseline="@id/chkbx"
+
+            ></TextView>
+
+
+
+        <Button
+            android:id="@+id/btnl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_shape"
+            android:backgroundTint="@color/orange"
+            android:layout_below="@id/forp"
+            android:layout_margin="10dp"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:fontFamily="casual"
+            ></Button>
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bxl"
+        android:layout_margin="10dp"
+        android:text="Sign Up"
+        android:textColor="@color/orange"
+        android:layout_centerHorizontal="true"
+        ></TextView>
+
+
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/signup"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/google"
+        ></ImageView>
+
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_below="@id/signup"
+        android:layout_alignBaseline="@id/google"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/google"
+        android:src="@drawable/facebook"
+        ></ImageView>
+
+
+</RelativeLayout>
